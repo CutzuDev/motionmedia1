@@ -1,21 +1,11 @@
-import { document } from "postcss";
-import { useEffect, useState } from "react";
+import Landing from "@/components/sections/Landing";
+import WorkProgress from "@/components/sections/WorkProgress";
 
 export default function Home() {
-  const [first, setfirst] = useState("");
-
-  useEffect(() => {
-    setfirst("test1111");
-    setTimeout(() => {
-      setfirst("1112321312312");
-    }, 5000);
-  }, []);
-
-  
   return (
-    <div className="w-full min-h-screen flex items-center justify-center text-7xl text-white">
-      Test
-      {first}
+    <div className="flex min-h-screen w-full flex-col items-center justify-start  text-white">
+      <Landing />
+      <WorkProgress />
     </div>
   );
 }
