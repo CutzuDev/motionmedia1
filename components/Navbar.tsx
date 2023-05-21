@@ -101,11 +101,14 @@ function Navbar() {
           </svg>
         </button>
         {navMenu && (
-          <ul className="absolute left-0 top-[81px] flex h-screen w-full flex-col justify-start gap-6 bg-black bg-opacity-50 p-4 backdrop-blur-xl md:hidden">
+          <ul className="absolute left-0 top-[80px] flex h-screen w-full flex-col justify-start gap-6 bg-black bg-opacity-50 p-4 backdrop-blur-xl md:hidden">
             {navLinks.map((item, index) => (
               <Link
                 key={index}
                 href={item.route}
+                onClick={() => {
+                  setnavMenu(!navMenu);
+                }}
                 className="select-none rounded-lg border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] py-3 text-center  transition-all hover:bg-opacity-10 "
               >
                 {item.linkName}
