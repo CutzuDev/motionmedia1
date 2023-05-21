@@ -18,10 +18,6 @@ const navLinks: NavLink[] = [
     route: "#services",
   },
   {
-    linkName: "Portfolio",
-    route: "#portfolio",
-  },
-  {
     linkName: "Contact",
     route: "#contact",
   },
