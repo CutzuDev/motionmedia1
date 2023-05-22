@@ -10,15 +10,15 @@ body {
 
 @keyframes testAnimation {
   0% {
-    transform: translateY(-10px);
+    transform: scale(1);
   }
 
   50% {
-    transform: translateY(10px);
+    transform: scale(1.2);
   }
 
   100% {
-    transform: translateY(-10px);
+    transform: scale(1);
   }
 }
 

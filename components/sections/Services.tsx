@@ -129,7 +129,7 @@ function ServicesItem({
   features,
 }: ServicesItemProps) {
   return (
-    <div className="flex h-[600px] w-full flex-col items-center justify-start gap-4 rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 p-8 backdrop-blur-sm transition-all hover:bg-opacity-40 md:w-[40%] lg:w-[27%]">
+    <div className="flex min-h-[600px] w-full flex-col items-center justify-start gap-4 rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 p-8 backdrop-blur-sm transition-all hover:bg-opacity-40 md:w-[40%] lg:w-[27%]">
       {icon}
       <span className="text-2xl font-black">{name}</span>
       <span className="text-center text-sm">{description}</span>
