@@ -48,7 +48,7 @@ function Navbar() {
             <Link
               key={index}
               href={item.route}
-              className="select-none rounded-lg border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] px-3 py-[6px] font-[100] transition-all hover:bg-opacity-10 "
+              className="select-none rounded-lg border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] px-3 py-[6px] transition-all hover:bg-opacity-10 "
             >
               {item.linkName}
             </Link>

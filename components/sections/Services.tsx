@@ -134,7 +134,7 @@ function ServicesItem({
       <span className="text-2xl font-black">{name}</span>
       <span className="text-center text-sm">{description}</span>
       <div className="mt-8 flex flex-col items-center justify-start">
-        <span className="text-2xl font-black">Features:</span>
+        <span className="text-2xl font-black">Features</span>
         <ul className="mt-2 flex w-3/4 flex-col items-center justify-start gap-4">
           {features.map((item, index) => (
             <li

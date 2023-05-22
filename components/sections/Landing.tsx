@@ -17,7 +17,7 @@ function Landing() {
             <Link
               href={"https://calendly.com/motionmediaagency/30min"}
               target="_blank"
-              className="animate-testAnimation1 select-none rounded-lg border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] px-6 py-3 text-2xl font-[100] transition-all hover:bg-opacity-10"
+              className="animate-testAnimation1 select-none rounded-lg border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] px-6 py-3 text-2xl  transition-all hover:bg-opacity-10"
             >
               Book Now!
             </Link>
@@ -27,9 +27,9 @@ function Landing() {
         <Image
           src={"/assets/UNDRAWNR1.svg"}
           width={1000}
-          height={1000} 
+          height={1000}
           draggable={false}
-          className=" hidden saturate-50 h-full w-full p-10 drop-shadow-[0px_0px_5px__rgba(0,0,0,1)] sm:p-20 xl:block xl:w-2/5 "
+          className=" hidden h-full w-full p-10 drop-shadow-[0px_0px_5px__rgba(0,0,0,1)] saturate-50 sm:p-20 xl:block xl:w-2/5 "
           alt="1"
         />
       </div>
