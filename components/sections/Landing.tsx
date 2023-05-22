@@ -27,7 +27,7 @@ function Landing() {
         <Image
           src={"/assets/UNDRAWNR1.svg"}
           width={1000}
-          height={1000}
+          height={1000} 
           draggable={false}
           className=" hidden saturate-50 h-full w-full p-10 drop-shadow-[0px_0px_5px__rgba(0,0,0,1)] sm:p-20 xl:block xl:w-2/5 "
           alt="1"

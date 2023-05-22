@@ -11,7 +11,7 @@ module.exports = {
         sans: ["var(--font-inter)"],
       },
       animation: {
-        testAnimation1: "testAnimation 2s infinite ease-in-out",
+        testAnimation1: "testAnimation 2s infinite ",
       },
     },
   },
