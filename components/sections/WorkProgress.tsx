@@ -47,7 +47,7 @@ const WorkProgressList: WorkProgressListItem[] = [
 function WorkProgress() {
   return (
     <section className="flex min-h-screen w-full select-none flex-col items-center justify-center gap-4 p-5">
-      <span className="text-5xl font-black capitalize">work steps</span>
+      <span className="text-6xl font-black capitalize">work steps</span>
       <span className="capitalize">our work in progress</span>
       <span className="text-center">
         This is how building your website looks like. We want to be transparent

@@ -5,7 +5,7 @@ function Contact() {
       className="my-10 flex w-full select-none flex-col items-center justify-center p-5 pb-[120px]"
     >
       <div className="border-opacity-30px-5 flex w-full max-w-[800px] flex-col items-center justify-between gap-[60px] rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 py-10 backdrop-blur-md transition-all hover:bg-opacity-40 sm:p-10">
-        <span className="text-5xl font-black">Contact</span>
+        <span className="text-6xl font-black">Contact</span>
         <div className="flex flex-col items-center justify-center gap-10">
           <a
             href="https://calendly.com/motionmediaagency/30min"
