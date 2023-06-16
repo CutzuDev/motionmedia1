@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function Landing() {
   return (
     <section className="flex h-screen w-full flex-col items-center justify-center">
@@ -7,42 +9,96 @@ function Landing() {
           <div className="flex h-full w-full flex-col items-start justify-center gap-10 2xl:px-5">
             <div className="flex w-full flex-col items-center justify-center gap-2">
               <div className="flex w-full justify-start">
-                <span className="bg-gradient-to-l from-blue-700 to-blue-400 bg-clip-text pl-1 text-2xl uppercase text-transparent">
+                <motion.span
+                  initial={{ opacity: 0, y: -25 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.1, type: "spring" }}
+                  className="bg-gradient-to-l from-blue-700 to-blue-400 bg-clip-text pl-1 text-2xl uppercase text-transparent"
+                >
                   We are motion media
-                </span>
+                </motion.span>
               </div>
-              <span className="w-full text-5xl font-bold md:text-7xl xl:text-8xl ">
+              <motion.span
+                initial={{ opacity: 0, y: -25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.15, type: "spring" }}
+                className="w-full text-5xl font-bold md:text-7xl xl:text-8xl "
+              >
                 Harness
-              </span>
-              <span className="w-full text-5xl font-bold md:text-7xl xl:text-8xl ">
+              </motion.span>
+              <motion.span
+                initial={{ opacity: 0, y: -25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.2, type: "spring" }}
+                className="w-full text-5xl font-bold md:text-7xl xl:text-8xl "
+              >
                 the power
-              </span>
-              <span className="w-full text-5xl font-bold md:text-7xl xl:text-8xl ">
+              </motion.span>
+              <motion.span
+                initial={{ opacity: 0, y: -25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.25, type: "spring" }}
+                className="w-full text-5xl font-bold md:text-7xl xl:text-8xl "
+              >
                 of motion
-              </span>
+              </motion.span>
             </div>
-            <span className="w-full text-xl text-neutral-200 md:text-3xl">
+            <motion.span
+              initial={{ opacity: 0, y: -25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3, type: "spring" }}
+              className="w-full text-xl text-neutral-200 md:text-3xl"
+            >
               Schedule a meeting for impactful outcomes.
-            </span>
-            <a
-              href="#contact"
-              className="select-none rounded-lg bg-gradient-to-tl from-blue-800 to-blue-400 px-6 py-4 text-3xl font-bold transition-all active:scale-95"
+            </motion.span>
+            <motion.a
+              whileTap={{
+                scale: 0.9,
+                transition: { duration: 0.2, delay: 0.01, type: "spring" },
+              }}
+              initial={{ opacity: 0, y: -25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.35, type: "spring" }}
+              href="#"
+              className="select-none rounded-lg bg-gradient-to-tl from-blue-800 to-blue-400 px-6 py-4 text-3xl font-bold "
             >
               Book Now
-            </a>
+            </motion.a>
           </div>
         </div>
         <div className="hidden h-full w-1/2 items-center justify-center  p-10 2xl:flex">
           <div className="relative flex h-full w-full items-center justify-center ">
-            <div className="absolute bottom-20 left-10 z-10 flex items-center justify-center gap-5 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50">
+            <motion.div
+              initial={{ opacity: 0, y: -25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 1,
+                delay: 0.5,
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+              }}
+              className="absolute bottom-20 left-10 z-10 flex items-center justify-center gap-5 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50"
+            >
               <span className="bg-gradient-to-br from-blue-800 to-blue-400 bg-clip-text text-6xl font-bold text-transparent">
                 4
               </span>
               <span className="text-lg font-semibold text-black ">
                 Years of <br /> experience
               </span>
-            </div>
-            <div className="absolute right-10 top-10 z-10 flex flex-col items-center justify-center gap-1 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 1,
+                delay: 0.4,
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+              }}
+              className="absolute right-10 top-10 z-10 flex flex-col items-center justify-center gap-1 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -51,22 +107,31 @@ function Landing() {
               >
                 <path
                   fillRule="evenodd"
-                  d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z"
+                  d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 10H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z"
                   clipRule="evenodd"
                 />
               </svg>
               <span className="text-center text-lg font-semibold text-black">
                 Award Winning <br /> Agency
               </span>
-            </div>
-            <div className="absolute left-1/2 top-1/2 aspect-square h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-white border-opacity-30 bg-black bg-opacity-10 backdrop-blur-sm transition-all hover:bg-opacity-20 ">
-              <svg
+            </motion.div>
+            <div className="absolute left-1/2 top-1/2 aspect-square h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 animate-fadeInBG overflow-hidden rounded-lg border border-white border-opacity-30 bg-black bg-opacity-10 backdrop-blur-sm transition-all delay-100 hover:bg-opacity-20 ">
+              <motion.svg
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
                 width="864"
                 height="645"
                 viewBox="0 0 864 645"
                 className="w-full"
+                initial={{ opacity: 0, y: -25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1,
+                  delay: 0.3,
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 10,
+                }}
               >
                 <polygon
                   points="165.74 630.543 179.675 630.542 182.261 576.504 165.737 576.794 165.74 630.543"
@@ -468,7 +533,7 @@ function Landing() {
                   transform="translate(-168 -127.5)"
                   fill="#2f2e41"
                 />
-              </svg>
+              </motion.svg>
             </div>
           </div>
         </div>

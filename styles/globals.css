@@ -8,3 +8,12 @@ body {
   @apply bg-black bg-[url('/assets/BGIMAGE.webp')] bg-cover bg-fixed bg-center bg-no-repeat;
 }
 
+@keyframes fadeInBG {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

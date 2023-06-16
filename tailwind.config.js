@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-inter)"],
       },
+      animation: {
+        'fadeInBG' : 'fadeInBG 1s 0.2s backwards ease-in-out'
+      }
     },
   },
   plugins: [],
