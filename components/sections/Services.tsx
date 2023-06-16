@@ -131,11 +131,11 @@ function ServicesItem({
     <div className="flex min-h-[600px] w-full flex-col items-center justify-start gap-5 rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 p-5 pt-10 sm:p-10 backdrop-blur-sm transition-all hover:bg-opacity-40 md:w-[40%] lg:w-[27%]">
       <div className="flex items-center justify-center gap-3">
         {icon}
-        <span className="sm:text-4xl text-3xl font-black">{name}</span>
+        <span className="sm:text-4xl 2xl:text-5xl text-3xl font-black">{name}</span>
       </div>
       <span className="w-[75%] text-left leading-snug">{description}</span>
       <div className="mt-10 flex flex-col items-center justify-start">
-        <span className="sm:text-4xl text-3xl font-black">Features</span>
+        <span className="sm:text-4xl text-3xl 2xl:text-5xl font-black">Features</span>
         <ul className="mt-5 flex w-[75%] flex-col items-center justify-start gap-4">
           {features.map((item, index) => (
             <li
