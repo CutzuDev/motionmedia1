@@ -2,9 +2,9 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="my-10 flex w-full select-none flex-col items-center justify-center pb-[120px] p-5"
+      className="my-10 flex w-full select-none flex-col items-center justify-center p-5 pb-[120px]"
     >
-      <div className="flex flex-col items-center justify-between gap-[60px] rounded-lg w-full sm:w-auto  border border-gray-300 border-opacity-30 px-5 py-5 sm:p-10 backdrop-blur-md">
+      <div className="border-opacity-30px-5 flex w-full max-w-[800px] flex-col items-center justify-between gap-[60px] transition-all rounded-lg border hover:bg-opacity-40 bg-black bg-opacity-20 border-gray-300 border-opacity-30 py-10 backdrop-blur-md sm:p-10">
         <span className="text-5xl font-black">Contact</span>
         <div className="flex flex-col items-center justify-center gap-4">
           <a

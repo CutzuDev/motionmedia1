@@ -19,28 +19,28 @@ const WorkProgressList: WorkProgressListItem[] = [
     description:
       "incepe cu o intalnire la care discutam ce website doriti si in ce profesie va aflati.",
     descriptionBold: "Motion Media",
-    color: "5D9B9B",
+    color: "0091ff",
   },
   {
     title: "Sedinta",
     description:
       "incepe cu o intalnire la care discutam ce website doriti si in ce profesie va aflati.",
     descriptionBold: "Motion Media",
-    color: "FAD201",
+    color: "ae00ff",
   },
   {
     title: "Sedinta",
     description:
       "incepe cu o intalnire la care discutam ce website doriti si in ce profesie va aflati.",
     descriptionBold: "Motion Media",
-    color: "DE4C8A",
+    color: "00ffae",
   },
   {
     title: "Sedinta",
     description:
       "incepe cu o intalnire la care discutam ce website doriti si in ce profesie va aflati.",
     descriptionBold: "Motion Media",
-    color: "FF7514",
+    color: "2a26ff",
   },
 ];
 

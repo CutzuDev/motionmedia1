@@ -128,19 +128,21 @@ function ServicesItem({
   features,
 }: ServicesItemProps) {
   return (
-    <div className="flex min-h-[600px] w-full flex-col items-center justify-start gap-4 rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 p-8 backdrop-blur-sm transition-all hover:bg-opacity-40 md:w-[40%] lg:w-[27%]">
-      {icon}
-      <span className="text-2xl font-black">{name}</span>
-      <span className="text-center text-sm">{description}</span>
-      <div className="mt-8 flex flex-col items-center justify-start">
-        <span className="text-2xl font-black">Features</span>
-        <ul className="mt-2 flex w-3/4 flex-col items-center justify-start gap-4">
+    <div className="flex min-h-[600px] w-full flex-col items-center justify-start gap-5 rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 p-5 pt-10 sm:p-10 backdrop-blur-sm transition-all hover:bg-opacity-40 md:w-[40%] lg:w-[27%]">
+      <div className="flex items-center justify-center gap-3">
+        {icon}
+        <span className="sm:text-4xl text-3xl font-black">{name}</span>
+      </div>
+      <span className="w-[75%] text-left leading-snug">{description}</span>
+      <div className="mt-10 flex flex-col items-center justify-start">
+        <span className="sm:text-4xl text-3xl font-black">Features</span>
+        <ul className="mt-5 flex w-[75%] flex-col items-center justify-start gap-4">
           {features.map((item, index) => (
             <li
               key={index}
-              className="relative flex items-center justify-center text-center"
+              className="relative flex items-center justify-center text-left leading-snug"
             >
-              <span>{item}</span>
+              {item}
             </li>
           ))}
         </ul>

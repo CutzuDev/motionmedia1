@@ -29,7 +29,7 @@ function Navbar() {
   const [navMenu, setnavMenu] = useState(false);
 
   return (
-    <nav className="fixed top-0 z-[999] flex h-20 w-full items-center justify-center border-b border-gray-300 border-opacity-30 text-white backdrop-blur-sm">
+    <nav className="fixed top-0 z-[999] flex h-20 w-full items-center bg-black/10 justify-center border-b border-gray-300 border-opacity-30 text-white backdrop-blur-sm">
       <div className="relative flex h-full w-full max-w-[1800px] items-center justify-between  px-5 sm:px-10 ">
         <div className="flex items-center justify-center gap-2">
           <Image
@@ -39,7 +39,7 @@ function Navbar() {
             draggable={false}
             alt=""
           />
-          <span className="select-none text-2xl font-semibold">
+          <span className="select-none text-2xl sm:text-3xl font-semibold">
             Motion Media
           </span>
         </div>
@@ -48,7 +48,7 @@ function Navbar() {
             <Link
               key={index}
               href={item.route}
-              className="select-none rounded-lg border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] px-3 py-[6px] transition-all hover:bg-opacity-10 "
+              className="select-none rounded-lg text-xl border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] px-3 py-[6px] transition-all hover:bg-opacity-10 "
             >
               {item.linkName}
             </Link>

@@ -10,9 +10,6 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-inter)"],
       },
-      animation: {
-        testAnimation1: "testAnimation 2s infinite ",
-      },
     },
   },
   plugins: [],

@@ -8,16 +8,3 @@ body {
   @apply bg-black bg-[url('/assets/BGIMAGE.webp')] bg-cover bg-fixed bg-center bg-no-repeat;
 }
 
-@keyframes testAnimation {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
