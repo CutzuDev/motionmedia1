@@ -54,8 +54,9 @@ function WorkProgress() {
         whileInView={{
           opacity: 1,
           y: 0,
-          transition: { duration: 0.25, delay: 0.1, ease: "easeInOut" },
+          transition: { duration: 0.25, delay: 0.2, ease: "easeInOut" },
         }}
+        viewport={{ once: true }}
         className="text-6xl font-black capitalize"
       >
         work steps
@@ -65,8 +66,9 @@ function WorkProgress() {
         whileInView={{
           opacity: 1,
           y: 0,
-          transition: { duration: 0.25, delay: 0.3, ease: "easeInOut" },
+          transition: { duration: 0.25, delay: 0.4, ease: "easeInOut" },
         }}
+        viewport={{ once: true }}
         className="capitalize"
       >
         our work in progress
@@ -76,14 +78,24 @@ function WorkProgress() {
         whileInView={{
           opacity: 1,
           y: 0,
-          transition: { duration: 0.25, delay: 0.5, ease: "easeInOut" },
+          transition: { duration: 0.25, delay: 0.6, ease: "easeInOut" },
         }}
+        viewport={{ once: true }}
         className="text-center"
       >
         This is how building your website looks like. We want to be transparent
         with the work so you can know how it looks like.
       </motion.span>
-      <div className="mt-8 flex w-full max-w-[1600px] flex-col flex-wrap items-center justify-start gap-8 md:flex-row md:gap-0 md:gap-y-8 ">
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.25, delay: 0.8, ease: "easeInOut" },
+        }}
+        viewport={{ once: true }}
+        className="mt-8 flex w-full max-w-[1600px] flex-col flex-wrap items-center justify-start gap-8 md:flex-row md:gap-0 md:gap-y-8 "
+      >
         {WorkProgressList.map((item, index) => (
           <div className="flex w-full items-center justify-center  md:w-[50%] xl:w-[25%]">
             <WorkProgressItem
@@ -96,7 +108,7 @@ function WorkProgress() {
             />
           </div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }
@@ -109,35 +121,19 @@ function WorkProgressItem({
   color,
 }: WorkProgressItemProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{
-        opacity: 1,
-
-        transition: { duration: 0.25, delay: 0.5, ease: "easeInOut" },
-      }}
-      className="flex h-80 w-80 flex-col items-start justify-start rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 p-8  transition-all hover:bg-opacity-40"
-    >
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{
-          opacity: 1,
-
-          transition: { duration: 0.25, delay: 0.5, ease: "easeInOut" },
-        }}
-        className="relative flex aspect-square items-center justify-center rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-25 p-2"
-      >
+    <div className="flex h-80 w-80 flex-col items-start justify-start rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 p-8  transition-all hover:bg-opacity-40">
+      <div className="relative flex aspect-square items-center justify-center rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-25 p-2">
         <span className="text-2xl font-black">{index}</span>
         <div
           className="absolute -left-[25%] -top-[30%] -z-10 h-[150%] w-[150%] rounded-full opacity-80 blur-2xl"
           style={{ backgroundColor: `#${color}` }}
         ></div>
-      </motion.div>
+      </div>
       <span className="mt-4 text-2xl font-black">{title}</span>
       <span className="mt-2 pr-2 text-left text-white text-opacity-70">
         <span className="font-bold">{descriptionBold}</span> {description}
       </span>
-    </motion.div>
+    </div>
   );
 }
 

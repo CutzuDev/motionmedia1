@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-
+import { motion } from "framer-motion";
 interface ServicesItemProps {
   name: string;
   description: string;
@@ -100,12 +100,41 @@ function Services() {
       id="services"
       className="flex min-h-screen w-full select-none flex-col items-center justify-center gap-4 p-5"
     >
-      <span className="text-6xl font-black capitalize">services</span>
-      <span className="text-center capitalize">
+      <motion.span
+        initial={{ opacity: 0, y: -10 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.25, delay: 0.2, ease: "easeInOut" },
+        }}
+        viewport={{ once: true }}
+        className="text-6xl font-black capitalize"
+      >
+        services
+      </motion.span>
+      <motion.span
+        initial={{ opacity: 0, y: -10 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.25, delay: 0.4, ease: "easeInOut" },
+        }}
+        viewport={{ once: true }}
+        className="text-center capitalize"
+      >
         you can see below what website services we offer
-      </span>
+      </motion.span>
       <div className="flex w-full items-center justify-center">
-        <div className="mt-8 flex w-full max-w-[1800px] flex-wrap items-center justify-center gap-8">
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.25, delay: 0.6, ease: "easeInOut" },
+          }}
+          viewport={{ once: true }}
+          className="mt-8 flex w-full max-w-[1800px] flex-wrap items-center justify-center gap-8"
+        >
           {ServicesList.map((item, index) => (
             <ServicesItem
               key={index}
@@ -115,7 +144,7 @@ function Services() {
               name={item.name}
             />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
@@ -128,14 +157,14 @@ function ServicesItem({
   features,
 }: ServicesItemProps) {
   return (
-    <div className="flex min-h-[600px] w-full flex-col items-center justify-start gap-5 rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 p-5 pt-10 sm:p-10 backdrop-blur-sm transition-all hover:bg-opacity-40 md:w-[40%] lg:w-[27%]">
+    <div className="flex min-h-[600px] w-full flex-col items-center justify-start gap-5 rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 p-5 pt-10 backdrop-blur-sm transition-all hover:bg-opacity-40 sm:p-10 md:w-[40%] lg:w-[27%]">
       <div className="flex items-center justify-center gap-3">
         {icon}
-        <span className="sm:text-4xl text-3xl font-black">{name}</span>
+        <span className="text-3xl font-black sm:text-4xl">{name}</span>
       </div>
       <span className="w-[75%] text-left leading-snug">{description}</span>
       <div className="mt-10 flex flex-col items-center justify-start">
-        <span className="sm:text-4xl text-3xl font-black">Features</span>
+        <span className="text-3xl font-black sm:text-4xl">Features</span>
         <ul className="mt-5 flex w-[75%] flex-col items-center justify-start gap-4">
           {features.map((item, index) => (
             <li
