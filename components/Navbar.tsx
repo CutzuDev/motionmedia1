@@ -60,7 +60,7 @@ function Navbar() {
             <Link
               key={index}
               href={item.route}
-              className="select-none rounded-lg border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] px-3 py-[6px] text-xl transition-all hover:bg-opacity-10 "
+              className="select-none rounded-lg border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] px-3 py-[6px] text-xl transition-all hover:bg-opacity-10 active:scale-95 "
             >
               {item.linkName}
             </Link>
