@@ -16,7 +16,7 @@ type ServicesListItem = {
 
 const ServicesList: ServicesListItem[] = [
   {
-    name: "Service Name",
+    name: "Video Editing",
     description:
       "Lorem ipsum, dolor sitamet consectetur adipisicing elit. Dolorum similique adipisci officiiset voluptate itaque deserunt magnam, temporibus ullam quis?",
     features: [
@@ -41,7 +41,7 @@ const ServicesList: ServicesListItem[] = [
     ),
   },
   {
-    name: "Service Name TEST2",
+    name: "Marketing",
     description:
       "Lorem ipsum, dolor sitamet consectetur adipisicing elit. Dolorum similique adipisci officiiset voluptate itaque deserunt magnam, temporibus ullam quis?",
     features: [
@@ -67,7 +67,7 @@ const ServicesList: ServicesListItem[] = [
     ),
   },
   {
-    name: "Service Name",
+    name: "Graphic Design",
     description:
       "Lorem ipsum, dolor sitamet consectetur adipisicing elit. Dolorum similique adipisci officiiset voluptate itaque deserunt magnam, temporibus ullam quis?",
     features: [
