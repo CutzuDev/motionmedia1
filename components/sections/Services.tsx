@@ -41,7 +41,7 @@ const ServicesList: ServicesListItem[] = [
     ),
   },
   {
-    name: "Service Name",
+    name: "Service Name TEST2",
     description:
       "Lorem ipsum, dolor sitamet consectetur adipisicing elit. Dolorum similique adipisci officiiset voluptate itaque deserunt magnam, temporibus ullam quis?",
     features: [
