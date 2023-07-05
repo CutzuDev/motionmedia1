@@ -78,7 +78,7 @@ function Landing() {
                 stiffness: 200,
                 damping: 10,
               }}
-              className="absolute bottom-20 left-10 z-10 flex items-center justify-center gap-5 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50"
+              className="absolute bottom-0 left-10 z-10 flex items-center justify-center gap-5 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50"
             >
               <span className="bg-gradient-to-br from-blue-800 to-blue-400 bg-clip-text text-6xl font-bold text-transparent">
                 4
@@ -97,7 +97,7 @@ function Landing() {
                 stiffness: 200,
                 damping: 10,
               }}
-              className="absolute right-10 top-10 z-10 flex flex-col items-center justify-center gap-1 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50"
+              className="absolute right-5 -top-5 z-10 flex flex-col items-center justify-center gap-1 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

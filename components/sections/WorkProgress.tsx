@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 interface WorkProgressItemProps {
-  index: number;
+  indexNumber: number;
   title: string;
   description: string;
   descriptionBold?: string;
@@ -15,40 +15,70 @@ type WorkProgressListItem = {
   color: string;
 };
 
+// const WorkProgressList: WorkProgressListItem[] = [
+//   {
+//     title: "Sedinta",
+//     descriptionBold: "Motion Media",
+//     description:
+//       "incepe cu o intalnire la care discutam ce website doriti si in ce profesie va aflati.",
+//     color: "0091ff",
+//   },
+//   {
+//     title: "Design",
+//     descriptionBold: "Creăm un design",
+//     description:
+//       " pentru site care să reprezinte scopul său, axându-vă pe aspectul vizual, culori și tipografie.",
+//     color: "ae00ff",
+//   },
+//   {
+//     title: "Develop",
+//     descriptionBold: "Transformăm designul",
+//     description:
+//       " într-un site funcțional utilizând HTML, Tailwind CSS și TypeScript, optimizând performanța și adăugând interactivitate.",
+//     color: "00ffae",
+//   },
+//   {
+//     title: "Deploy",
+//     descriptionBold: "Lansam site-ul",
+//     description:
+//       "utilizand platforma de hostare Vercel impreuna cu domain-ul dumneavoastra si adaugand SSL.",
+//     color: "2a26ff",
+//   },
+// ];
 const WorkProgressList: WorkProgressListItem[] = [
   {
-    title: "Sedinta",
-    description:
-      "incepe cu o intalnire la care discutam ce website doriti si in ce profesie va aflati.",
+    title: "Meeting",
     descriptionBold: "Motion Media",
+    description:
+      " starts with a meeting where we discuss what website you want and what profession you are in.",
     color: "0091ff",
   },
   {
-    title: "Sedinta",
+    title: "Design",
+    descriptionBold: "We create a design",
     description:
-      "incepe cu o intalnire la care discutam ce website doriti si in ce profesie va aflati.",
-    descriptionBold: "Motion Media",
+      " for the website that represents your purpose, focusing on visual aspects, colors, and typography.",
     color: "ae00ff",
   },
   {
-    title: "Sedinta",
+    title: "Development",
+    descriptionBold: "We transform the design",
     description:
-      "incepe cu o intalnire la care discutam ce website doriti si in ce profesie va aflati.",
-    descriptionBold: "Motion Media",
+      " into a functional website using HTML, Tailwind CSS, and TypeScript, optimizing performance and adding interactivity.",
     color: "00ffae",
   },
   {
-    title: "Sedinta",
+    title: "Deploying",
+    descriptionBold: "We launch the website",
     description:
-      "incepe cu o intalnire la care discutam ce website doriti si in ce profesie va aflati.",
-    descriptionBold: "Motion Media",
+      " using the Vercel hosting platform, along with your domain, and adding SSL.",
     color: "2a26ff",
   },
 ];
 
 function WorkProgress() {
   return (
-    <section className="flex min-h-screen w-full select-none flex-col items-center justify-center gap-4 p-5">
+    <section className="flex min-h-screen w-full  flex-col items-center justify-center gap-4 p-5">
       <motion.span
         initial={{ opacity: 0, y: -10 }}
         whileInView={{
@@ -71,7 +101,7 @@ function WorkProgress() {
         viewport={{ once: true }}
         className="capitalize"
       >
-        our work in progress
+        our work chart
       </motion.span>
       <motion.span
         initial={{ opacity: 0, y: -10 }}
@@ -83,7 +113,7 @@ function WorkProgress() {
         viewport={{ once: true }}
         className="text-center"
       >
-        This is how building your website looks like. We want to be transparent
+        These are the steps for building your website. We want to be transparent
         with the work so you can know how it looks like.
       </motion.span>
       <motion.div
@@ -97,10 +127,12 @@ function WorkProgress() {
         className="mt-8 flex w-full max-w-[1600px] flex-col flex-wrap items-center justify-start gap-8 md:flex-row md:gap-0 md:gap-y-8 "
       >
         {WorkProgressList.map((item, index) => (
-          <div className="flex w-full items-center justify-center  md:w-[50%] xl:w-[25%]">
+          <div
+            key={index}
+            className="flex w-full items-center justify-center  md:w-[50%] xl:w-[25%]"
+          >
             <WorkProgressItem
-              key={index}
-              index={index + 1}
+              indexNumber={index + 1}
               title={item.title}
               description={item.description}
               color={item.color}
@@ -114,16 +146,16 @@ function WorkProgress() {
 }
 
 function WorkProgressItem({
-  index,
+  indexNumber,
   title,
   description,
   descriptionBold,
   color,
 }: WorkProgressItemProps) {
   return (
-    <div className="flex h-80 w-80 flex-col items-start justify-start rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 p-8  transition-all hover:bg-opacity-40">
+    <div className="flex h-80 w-80 flex-col items-start justify-start rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-20 p-8 backdrop-blur-sm  transition-all hover:bg-opacity-40">
       <div className="relative flex aspect-square items-center justify-center rounded-lg border border-gray-300 border-opacity-30 bg-black bg-opacity-25 p-2">
-        <span className="text-2xl font-black">{index}</span>
+        <span className="text-2xl font-black">{indexNumber}</span>
         <div
           className="absolute -left-[25%] -top-[30%] -z-10 h-[150%] w-[150%] rounded-full opacity-80 blur-2xl"
           style={{ backgroundColor: `#${color}` }}
