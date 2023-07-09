@@ -18,6 +18,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#00ccff" />
         <meta
+          name="keywords"
+          content="web development, website design, responsive websites, custom web development, e-commerce solutions, front-end development, back-end development, SEO optimization, mobile-friendly websites, user experience, web application development, CMS development, HTML, CSS, JavaScript, PHP, Python, Java, Ruby, WordPress, Drupal, Joomla, Magento, Shopify, SEO-friendly URLs, site speed optimization, cross-browser compatibility, website maintenance, website security, UI/UX design, graphic design"
+        ></meta>
+        <meta
           name="description"
           content="A Start-Up Company focused on providing the Best Quality websites on the market!"
         />

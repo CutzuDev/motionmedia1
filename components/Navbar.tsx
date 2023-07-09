@@ -57,14 +57,16 @@ function Navbar() {
         </div>
         <ul className="hidden items-center justify-center gap-4 md:flex">
           {navLinks.map((item, index) => (
-            <Link
-              scroll={false}
-              key={index}
-              href={item.route}
-              className="select-none rounded-lg border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] px-3 py-[6px] text-xl transition-all hover:bg-opacity-10 active:scale-95 "
-            >
-              {item.linkName}
-            </Link>
+            <li>
+              <Link
+                scroll={false}
+                key={index}
+                href={item.route}
+                className="select-none rounded-lg border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] px-3 py-[6px] text-xl transition-all hover:bg-opacity-10 active:scale-95 "
+              >
+                {item.linkName}
+              </Link>
+            </li>
           ))}
         </ul>
         <button
