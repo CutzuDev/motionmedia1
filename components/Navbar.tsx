@@ -12,7 +12,7 @@ type NavLink = {
 const navLinks: NavLink[] = [
   {
     linkName: "Home",
-    route: "/",
+    route: "/#",
   },
   {
     linkName: "Services",
