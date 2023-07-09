@@ -58,7 +58,7 @@ const WorkProgressList: WorkProgressListItem[] = [
     descriptionBold: "We create a design",
     description:
       " for the website that represents your purpose, focusing on visual aspects, colors, and typography.",
-    color: "ae00ff",
+    color: "d06bff",
   },
   {
     title: "Development",
@@ -72,13 +72,13 @@ const WorkProgressList: WorkProgressListItem[] = [
     descriptionBold: "We launch the website",
     description:
       " using the Vercel hosting platform, along with your domain, and adding SSL.",
-    color: "2a26ff",
+    color: "879bff",
   },
 ];
 
 function WorkProgress() {
   return (
-    <section className="flex min-h-screen w-full  flex-col items-center justify-center gap-4 p-5">
+    <section className="flex min-h-screen w-full select-none  flex-col items-center justify-center gap-4 p-5">
       <motion.span
         initial={{ opacity: 0, y: -10 }}
         whileInView={{
@@ -87,21 +87,9 @@ function WorkProgress() {
           transition: { duration: 0.25, delay: 0.2, ease: "easeInOut" },
         }}
         viewport={{ once: true }}
-        className="text-6xl font-black capitalize"
+        className="text-7xl font-black capitalize"
       >
         work steps
-      </motion.span>
-      <motion.span
-        initial={{ opacity: 0, y: -10 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.25, delay: 0.4, ease: "easeInOut" },
-        }}
-        viewport={{ once: true }}
-        className="capitalize"
-      >
-        our work chart
       </motion.span>
       <motion.span
         initial={{ opacity: 0, y: -10 }}
@@ -113,8 +101,7 @@ function WorkProgress() {
         viewport={{ once: true }}
         className="text-center"
       >
-        These are the steps for building your website. We want to be transparent
-        with the work so you can know how it looks like.
+        These are the steps for building your website.
       </motion.span>
       <motion.div
         initial={{ opacity: 0, y: -10 }}

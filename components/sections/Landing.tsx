@@ -13,7 +13,7 @@ function Landing() {
                   initial={{ opacity: 0, y: -25 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 0.1, type: "spring" }}
-                  className="bg-gradient-to-l from-blue-700 to-blue-400 bg-clip-text pl-1 text-2xl uppercase text-transparent"
+                  className="bg-gradient-to-l from-blue-600 to-blue-400 bg-clip-text pl-1 text-2xl uppercase text-transparent"
                 >
                   We are motion media
                 </motion.span>
@@ -54,19 +54,23 @@ function Landing() {
             <motion.a
               whileTap={{
                 scale: 0.9,
-                transition: { duration: 0.2, delay: 0.01, type: "spring" },
+                transition: { duration: 0.5, delay: 0.01, type: "spring" },
+              }}
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.5, delay: 0.01, type: "spring" },
               }}
               initial={{ opacity: 0, y: -25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.35, type: "spring" }}
-              href="#"
+              href="#contact"
               className="select-none rounded-lg bg-gradient-to-tl from-blue-800 to-blue-400 px-6 py-4 text-3xl font-bold "
             >
               Book Now
             </motion.a>
           </div>
         </div>
-        <div className="hidden h-full w-1/2 items-center justify-center  p-10 2xl:flex">
+        <div className="hidden h-full w-1/2 select-none items-center justify-center  p-10 2xl:flex">
           <div className="relative flex h-full w-full items-center justify-center ">
             <motion.div
               initial={{ opacity: 0, y: -25 }}
@@ -78,7 +82,7 @@ function Landing() {
                 stiffness: 200,
                 damping: 10,
               }}
-              className="absolute bottom-0 left-10 z-10 flex items-center justify-center gap-5 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50"
+              className="absolute  bottom-0 left-10 z-10 flex items-center justify-center gap-5 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50"
             >
               <span className="bg-gradient-to-br from-blue-800 to-blue-400 bg-clip-text text-6xl font-bold text-transparent">
                 4
@@ -97,7 +101,7 @@ function Landing() {
                 stiffness: 200,
                 damping: 10,
               }}
-              className="absolute right-5 -top-5 z-10 flex flex-col items-center justify-center gap-1 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50"
+              className="absolute -top-5 right-5 z-10 flex flex-col items-center justify-center gap-1 rounded-lg bg-white px-7 py-5 shadow-2xl shadow-black/50"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

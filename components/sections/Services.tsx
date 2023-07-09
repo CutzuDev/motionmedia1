@@ -25,7 +25,7 @@ const ServicesList: ServicesListItem[] = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-12 w-12 object-contain"
+        className="h-12 w-12 object-contain text-blue-400"
       >
         <path
           strokeLinecap="round"
@@ -50,7 +50,7 @@ const ServicesList: ServicesListItem[] = [
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="h-12 w-12 object-contain"
+        className="h-12 w-12 object-contain text-blue-400"
       >
         <path
           strokeLinecap="round"
@@ -76,7 +76,7 @@ const ServicesList: ServicesListItem[] = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-12 w-12 object-contain"
+        className="h-12 w-12 object-contain text-blue-400"
       >
         <path
           strokeLinecap="round"
@@ -102,7 +102,7 @@ function Services() {
           transition: { duration: 0.25, delay: 0.2, ease: "easeInOut" },
         }}
         viewport={{ once: true }}
-        className="text-6xl font-black capitalize"
+        className="bg-gradient-to-br from-blue-400 to-blue-600 bg-clip-text text-7xl font-black capitalize text-transparent"
       >
         services
       </motion.span>

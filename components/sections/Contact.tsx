@@ -22,6 +22,14 @@ function Contact() {
         <div className="flex flex-col items-center justify-center gap-10">
           <motion.a
             initial={{ opacity: 0, y: -10 }}
+            whileTap={{
+              scale: 0.9,
+              transition: { duration: 0.5, delay: 0.01, type: "spring" },
+            }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.5, delay: 0.01, type: "spring" },
+            }}
             whileInView={{
               opacity: 1,
               y: 0,
@@ -52,6 +60,14 @@ function Contact() {
           </motion.a>
           <motion.a
             initial={{ opacity: 0, y: -10 }}
+            whileTap={{
+              scale: 0.9,
+              transition: { duration: 0.5, delay: 0.01, type: "spring" },
+            }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.5, delay: 0.01, type: "spring" },
+            }}
             whileInView={{
               opacity: 1,
               y: 0,

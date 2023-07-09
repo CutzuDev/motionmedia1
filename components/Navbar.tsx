@@ -40,7 +40,7 @@ function Navbar() {
         stiffness: 200,
         damping: 15,
       }}
-      className="fixed top-0 z-[999] flex h-20 w-full items-center justify-center border-b border-gray-300 border-opacity-30 bg-black/10 text-white backdrop-blur-sm"
+      className="fixed top-0 z-[999] flex h-20 w-full items-center justify-center border-b border-gray-300 border-opacity-30 bg-black/30 text-white backdrop-blur-sm"
     >
       <div className="relative flex h-full w-full max-w-[1800px] items-center justify-between  px-5 sm:px-10 ">
         <div className="flex items-center justify-center gap-2">
@@ -58,6 +58,7 @@ function Navbar() {
         <ul className="hidden items-center justify-center gap-4 md:flex">
           {navLinks.map((item, index) => (
             <Link
+              scroll={false}
               key={index}
               href={item.route}
               className="select-none rounded-lg border border-gray-300 border-opacity-30 bg-gray-300 bg-opacity-[3%] px-3 py-[6px] text-xl transition-all hover:bg-opacity-10 active:scale-95 "

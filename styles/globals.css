@@ -8,6 +8,10 @@ body {
   @apply bg-black bg-[url('/assets/BGIMAGE.webp')] bg-cover bg-fixed bg-center bg-no-repeat;
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 @keyframes fadeInBG {
   0% {
     opacity: 0;

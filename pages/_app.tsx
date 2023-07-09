@@ -27,10 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="A Start-Up Company focused on providing the Best Quality websites on the market!"
         />
         <meta property="og:site_name" content="Motion Websites" />
-        <meta
-          property="og:image"
-          content="/assets/MMLOGO.webp"
-        />
+        <meta property="og:image" content="/assets/MMLOGO.webp" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <title>Motion Websites</title>
       </Head>
